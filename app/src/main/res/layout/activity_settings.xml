@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity"
+    android:background="@drawable/background_new"
+    >
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/compThinkAnimation"
+        android:layout_width="200dp"
+        android:layout_height="136dp"
+        android:alpha="1"
+        android:rotation="-90"
+        android:scaleX="-1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.932"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.394"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/comp_think" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/paperAnimation"
+        android:layout_width="200dp"
+        android:layout_height="136dp"
+        android:alpha="0"
+        android:rotation="90"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.394"
+        app:lottie_rawRes="@raw/paper_animation" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/scissorAnimation"
+        android:layout_width="200dp"
+        android:layout_height="136dp"
+        android:alpha="0"
+        android:rotation="90"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.394"
+        app:lottie_rawRes="@raw/scissor_animation" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/rockAnimation"
+        android:layout_width="200dp"
+        android:layout_height="136dp"
+        android:alpha="0"
+        android:rotation="90"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.394"
+        app:lottie_rawRes="@raw/rock_animation" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/rockAnimation1"
+        android:layout_width="200dp"
+        android:layout_height="136dp"
+        android:alpha="0"
+        android:rotation="-90"
+        android:scaleX="-1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.935"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.396"
+        app:lottie_rawRes="@raw/rock_animation1" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/scissorAnimation1"
+        android:layout_width="200dp"
+        android:layout_height="136dp"
+        android:alpha="1"
+        android:rotation="-90"
+        android:scaleX="-1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.927"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.415"
+        app:lottie_rawRes="@raw/scissor_animation1" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/paperAnimation1"
+        android:layout_width="200dp"
+        android:layout_height="136dp"
+        android:alpha="1"
+        android:rotation="-90"
+        android:scaleX="-1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.931"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.396"
+        app:lottie_rawRes="@raw/paper_animation1" />
+
+    <Button
+        android:id="@+id/rock"
+        android:layout_width="146dp"
+        android:layout_height="83dp"
+        android:text="STONE"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.793" />
+
+    <Button
+        android:id="@+id/paper"
+        android:layout_width="141dp"
+        android:layout_height="82dp"
+        android:text="PAPER"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.957" />
+
+    <Button
+        android:id="@+id/scissor"
+        android:layout_width="148dp"
+        android:layout_height="77dp"
+        android:text="SCISSOR"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.792" />
+
+    <TextView
+        android:id="@+id/instruction"
+        android:layout_width="392dp"
+        android:layout_height="65dp"
+        android:shadowColor="#FE00FA"
+        android:text="JUST ROCK ON!!"
+        android:textAlignment="center"
+        android:textColor="#6750A3"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/scissor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.233" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="339dp"
+        android:layout_height="49dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.631" />'
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="148dp"
+        android:layout_height="48dp"
+        android:text="YOUR CHOICE"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.129"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.536" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="194dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="60dp"
+        android:text="COMPUTER CHOICE"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.532" />
+
+    <ImageView
+        android:id="@+id/nRockImage"
+        android:layout_width="78dp"
+        android:layout_height="65dp"
+        android:alpha="0"
+        android:rotation="90"
+        app:layout_constraintBottom_toBottomOf="@+id/paper"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.219"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.428"
+        app:srcCompat="@drawable/rock1image" />
+
+    <ImageView
+        android:id="@+id/nScissorImage"
+        android:layout_width="107dp"
+        android:layout_height="91dp"
+        android:alpha="0"
+        android:rotation="90"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.216"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.412"
+        app:srcCompat="@drawable/scissor1image" />
+
+    <ImageView
+        android:id="@+id/nPaperImage"
+        android:layout_width="107dp"
+        android:layout_height="91dp"
+        android:alpha="0"
+        android:rotation="90"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.241"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.412"
+        app:srcCompat="@drawable/paper1image" />
+
+    <ImageView
+        android:id="@+id/nRock1Image"
+        android:layout_width="78dp"
+        android:layout_height="65dp"
+        android:alpha="0"
+        android:rotation="-90"
+        android:scaleX="-1"
+        app:layout_constraintBottom_toBottomOf="@+id/paper"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.768"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.429"
+        app:srcCompat="@drawable/rock1image" />
+
+    <ImageView
+        android:id="@+id/nScissor1Image"
+        android:layout_width="107dp"
+        android:layout_height="91dp"
+        android:alpha="0"
+        android:rotation="-90"
+        android:scaleX="-1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.797"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.412"
+        app:srcCompat="@drawable/scissor1image" />
+
+    <ImageView
+        android:id="@+id/nPaper1Image"
+        android:layout_width="107dp"
+        android:layout_height="91dp"
+        android:alpha="0"
+        android:rotation="-90"
+        android:scaleX="-1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.797"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.412"
+        app:srcCompat="@drawable/paper1image" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
